@@ -36,7 +36,6 @@ const Evaluate = () => {
     return Array(questions.length).fill("");
   });
 
-  // Save to localStorage when answers change
   useEffect(() => {
     localStorage.setItem("answers", JSON.stringify(answers));
   }, [answers]);
@@ -45,13 +44,13 @@ const Evaluate = () => {
     const updated = [...answers];
     updated[i] = val;
     setAnswers(updated);
-    localStorage.removeItem("answers"); //clear after use
+    localStorage.removeItem("answers");
   };
 
   const handleEvaluate = async () => {
     try {
       const evaluations = await evaluateAnswers(questions, answers);
-      localStorage.removeItem("answers"); //clear after use
+      localStorage.removeItem("answers");
       navigate("/result", {
         state: { questions, answers, evaluations, jobDesc, resume },
       });
@@ -66,12 +65,55 @@ const Evaluate = () => {
     navigate("/welcome");
   };
 
+  // 1. Timer logic
+  const [timeLeft, setTimeLeft] = useState(600); // 10 minutes = 600 seconds
+
+  useEffect(() => {
+    if (timeLeft === 0) {
+      alert("Time is up! Submitting your answers.");
+      handleEvaluate();
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
+  // 2. Format timer
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60)
+      .toString()
+      .padStart(2, "0");
+    const secs = (seconds % 60).toString().padStart(2, "0");
+    return `${mins}:${secs}`;
+  };
+
+  // 3. Manual submit confirmation
+  const confirmSubmit = () => {
+    if (
+      window.confirm(
+        "Are you sure you want to end the test and submit answers?"
+      )
+    ) {
+      handleEvaluate();
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl space-y-8 mt-8">
-        <h1 className="text-3xl font-bold text-center text-blue-950">
-          Answer Interview Questions
-        </h1>
+        <div className="flex justify-between items-center">
+          <h1 className="text-3xl font-bold text-blue-950">
+            Answer Interview Questions
+          </h1>
+          <div className="text-xl font-semibold text-red-600">
+            ⏳ {formatTime(timeLeft)}
+          </div>
+        </div>
+
         {questions.map((q, i) => (
           <div key={i}>
             <p className="font-semibold mb-1 text-lg text-gray-800">
@@ -88,12 +130,13 @@ const Evaluate = () => {
             />
           </div>
         ))}
-        <div className="text-center">
+
+        <div className="text-center space-x-4">
           <button
-            onClick={handleEvaluate}
+            onClick={confirmSubmit}
             className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 text-lg font-semibold shadow"
           >
-            Evaluate
+            End Test & Evaluate
           </button>
         </div>
       </div>
