@@ -1,0 +1,25 @@
+{
+  "user": {
+    "username": "Sakshi",
+    "email": "sakshi0@gmail.com",
+    "userId": "1751175269779"
+  },
+  "jobDesc": " I am hiring for the month stack profile where I will be asking for the AWS Python Django and other frameworks",
+  "resume": " Sakshi God from MP Madhya Pradesh and I have done my BTech from computer science and this is my resumen",
+  "questions": [
+    "Based on your B.Tech in Computer Science, can you describe a project where you utilized Python?",
+    "The role requires experience with AWS. Can you elaborate on any AWS services you have worked with and how you used them?",
+    "This role involves the MERN stack, including Django. Can you discuss your experience with Django, including projects or specific features you've implemented?"
+  ],
+  "answers": [
+    " question number 1 and the answer is BTech computer science",
+    " question number 2 and answer AWS , yes this is good ,  services of AWS I have not worked with thank you ",
+    " this is the question number 3 and answer 8"
+  ],
+  "scores": [
+    1,
+    1,
+    1
+  ],
+  "evaluatedAt": "2025-06-29T05:50:41.225Z"
+}

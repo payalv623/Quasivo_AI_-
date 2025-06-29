@@ -1,0 +1,25 @@
+{
+  "user": {
+    "username": "Raksha",
+    "email": "Raksha3123456@gmail.com",
+    "userId": "1751174198851"
+  },
+  "jobDesc": "Job Title: MERN Stack Developer\nJob Description:\n\nWe are looking for a passionate and experienced MERN Stack Developer to build modern, scalable web applications. You will work on end-to-end development using MongoDB, Express.js, React.js, and Node.js, contributing to design, development, testing, and deployment.\n\nResponsibilities:\n\nDevelop and maintain full-stack web applications using the MERN stack\n\nDesign RESTful APIs and integrate front-end with back-end services\n\nOptimize applications for performance and scalability\n\nCollaborate with UI/UX designers, product managers, and other developers\n\nWrite clean, maintainable, and testable code\n\nRequirements:\n\n1–3 years of hands-on experience in MERN stack development\n\nStrong knowledge of JavaScript, HTML5, and CSS3\n\nExperience with Git, REST APIs, and MongoDB queries\n\nFamiliarity with cloud platforms like AWS is a plus\n\nGood understanding of OOPs and SDLC principles",
+  "resume": "Skills\nReact.js,Express.js, Node.js, MongoDB, JavaScript, Laravel, HTML, CSS, Tailwind CSS,\nSQL, Python\nExperience\nProjects\nShri G.S. Institute of Technology and Science , Indore\nMCA\n2022-2024 — 8.5 CGPA\nDAVV, Indore\nBsc (Computer Science)\n2019-2021 — 68\nHoly Spirit Convent School, Khandwa\n12th (PCM)\n2018 — 62\nSt. Mary's Convent School, Khandwa\n10th\n2015 — 70.33\nFreelancing\nCurrently developing cross-platform applications, utilizing Flutter for mobile\nand React.js with Express.js for web development\nMarch 2025 - Present\nThe Prime Step Institute\nLecturer\nDec 2024 - Feb 2025\nVidyagxp\nFull Stack developer\nPharma-related projects like Document Management Systems (DMS), Quality Management Systems\n(QMS).\nApril 2024 - Sept 2024\nIIT Indore\nResearch Intern\nProject title : Cluster Head Selection in Wireless Sensor Networks using IoT.\nFeb 2024 - April 2024\nDecode Infocorp\nFull stack developer\nProjects: IBank Corporation | Lake Exclusive\n(http://www.lakeexclusive.com/)\n Projects include IBank Corporation’s banking services, Contract Rite’s\ncontract consulting,Lake Exclusive’s UK lakes image-book, New Global Tour\nLife’s tour booking app, and many more.\nJan 2023 - March 2024\nQuasivo AI - Candidate Screening\nBuilt an AI-powered candidate screening web app using React.js, Express.js,\nand Google Gemini API for intelligent evaluations. Integrated Cursor AI for\ncode assistance.\nTech Stack: React.js, Express.js, Gemini API, Node.js, Cursor AI\nExercise Tracker - App | MERN (React.js, Express.js, Node.js,\nMongodb)\n\nHackathons\n_______________________________________________________________________________________\nAn Exercise Tracker App is a full-stack application that lets users log and\nmanage their workouts. \nLake Exclusive (http://www.lakeexclusive.com/) | React.js, HTML,\nTailwind CSS, Javascript\nLake Exclusive is an image-book showcasing the UK’s most scenic, exclusive\nlakes, offering fishing and unforgettable moments.\nBook Recommender System\nTech Stack - Python,Numpy and Pandas, Pycharm and Google-Colabs\n• Shortlisted for Semi-finals in the Japanese Hackathon, KakushIN-The\nCoding Contest conducted by Nomura.",
+  "questions": [
+    "Explain your experience optimizing MongoDB queries and data models for performance in a high-traffic application.",
+    "Describe a complex React.js component you've built, detailing state management and performance considerations.",
+    "Detail your experience securing Express.js APIs. How did you implement authentication and authorization?"
+  ],
+  "answers": [
+    "",
+    "\"One of the most complex React components I built was a dynamic form builder used in an internal dashboard. It allowed users to create forms by dragging and dropping various input types (text, date, radio, etc.).\"\n\nState Management:\nI used useReducer to manage the form state because it involved nested structures — sections → fields → validations. This allowed better control and cleaner updates than useState.\n\nPerformance Optimizations:\n\nUsed React.memo and useCallback to prevent unnecessary re-renders of individual form fields.\n\nApplied lazy loading of heavy components like date pickers using React.lazy().\n\nAdded debouncing for autosave functionality using lodash.debounce.",
+    "45556"
+  ],
+  "scores": [
+    8,
+    9,
+    1
+  ],
+  "evaluatedAt": "2025-06-29T06:50:47.637Z"
+}

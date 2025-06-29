@@ -1,0 +1,25 @@
+{
+  "user": {
+    "username": "Raksha",
+    "email": "Raksha3123456@gmail.com",
+    "userId": "1751174198851"
+  },
+  "jobDesc": "python , django,fastapi",
+  "resume": "\n\n\nrakhsa\n9516918344|rakshalv623@gmail.com|\nEducation\nUGC NET Qualified(December 2024)76.66 percentile\nEligible for Ph.d admissionDecember 2024\nShri G.S. Institute of Technology and Science8.5 CGPA\nMaster of Computer ApplicationAug. 2022 – May 2024\nDAVV, Indore7.2 CGPA\nBachelor of Science, Major-Computer ScienceJuly. 2018 – May 2021\nExperience\nTokyo AnalticXFeb 2025 – Present\nTrainer and Software DeveloperIndore\n•\nMaintaining and optimizing an existing project/websites by debugging and implementing updates.\n•\nTraining students in Python and other programming languages with a hands-on approach.\nVidyaGxPApril 2024 – Sept 2024\nFull Stack DeveloperIndore\n•\nWorked on live projects, including full-stack web development and Pharma-related projects like Document\nManagement Systems (DMS), Quality Management Systems (QMS).\n•\nExplored ways to visualize GitHub collaboration\nIndian Institute of TechnologyFeb.  2024 – May 2024\nResearch InternIndore\n•\nProject Title:  Cluster Head Selection in Wireless Sensor Networks using IoT\n•\nMy work included identifying existing gaps in research papers, comparing different methodologies, proposing\ninnovative technologies, and evaluating their performance.\nDcode InfocorpJan 2023 – March 2024\nFull Stack DeveloperIndore\n•\nProjects include IBank Corporation’s banking services, Contract Rite’s contract consulting, Lake Exclusive’s UK\nlakes image-book, New Global Tour Life’s tour booking app, and many more.\nProjects\nExercise Tracker - App|MERN (React.js, Express.js, Node.js, Mongodb)July 2024\n•\nAn Exercise Tracker App is a full-stack application that lets users log and manage their workouts.  It uses\nMongoDB for data storage, Express.js and Node.js for the backend API, and React for a dynamic, responsive\nfrontend interface.\nContract Rite|HTML, CSS, Javascript, JQuery, Ajax, LaravelMay 2023\n•\nLeading contract consultants in the UK, providing specialized advice in contract reviews, negotiations, and dispute\nhandling.\nLake Exclusive (http://www.lakeexclusive.com/)|React.js, HTML, Tailwind CSS, JavascriptSept 2023\n•\nLake Exclusive is an image-book showcasing the UK’s most scenic, exclusive lakes, offering fishing, unforgettable\nmoments, and stunning views.  It’s the ideal getaway, promising beauty in every image.\nBook Recommender System|Python, Pandas, Numpy, FlaskNov 2023\n•\nProject aims to enhance the reading experience for book enthusiasts by guiding them books they are likely to enjoy\nbased on the preferences of similar readers.\nTechnical Skills\nLanguages:  Java(core), Python, C/C++, SQL , JavaScript, HTML/CSS, Bootstrap\nWeb and Frameworks:  Express.js , Node.js , Laravel , React.js , Tailwind CSS\nDatabases:MongoDB, SQL\nDeveloper Tools:  Git , AWS , VS Code\nLibraries:  Pandas, NumPy ,Matplotlib, JQuery\n\nWorkshops and Hackathons\n•\nActive Participation in Workshop of AI with Machine Learning conducted by Ethical Edu-fabrica Pvt Ltd.  at\nMUN, IIT Indore.\n•\nShortlisted for Semi-finals in the Japanese Hackathon, KakushIN-The Coding Contest conducted by Nomura.\n•\nCertificate of completion of Java Course at Universal Informatics.",
+  "questions": [
+    "Based on your experience training students in Python, describe a time you had to explain a complex Python concept in a simple and easy-to-understand way. What techniques did you use?",
+    "The job description mentions Django and FastAPI. Can you describe your experience with either framework and how you would approach building a RESTful API using it?",
+    "In your Book Recommender System project, you used Python, Pandas, NumPy, and Flask. Can you elaborate on your role in that project and explain how you used Pandas and NumPy for data manipulation and analysis?"
+  ],
+  "answers": [
+    "",
+    "09808908908908098",
+    "uosuokvjlskdj sifuislrgjnvlksjgosug sdupsfjsdf "
+  ],
+  "scores": [
+    8,
+    6,
+    9
+  ],
+  "evaluatedAt": "2025-06-29T05:19:40.373Z"
+}
