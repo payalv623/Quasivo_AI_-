@@ -12,6 +12,7 @@ Based on the following RESUME and JOB DESCRIPTION, generate 3 interview question
 The level of questions should be tough and more technical.
 
 IMPORTANT CONSTRAINTS:
+- Take only first 300 words from resume and job description.
 - Each question must be MAXIMUM 3 lines long
 - Each question must not exceed 30 words
 - Keep questions concise and direct
@@ -69,24 +70,21 @@ Output must be in this JSON format ,Please return only a valid JSON object. Do n
 export const evaluateAnswers = async (questions, answers) => {
   const prompt = `
 You are a strict technical interviewer evaluating candidate responses. Score each answer from 1-10 based on these criteria:
+SCORING RUBRIC:
+- Score 0: Answer is empty or "  "
+- Score 0: Answer is empty, gibberish, random characters, or irrelevant
+- Score 1-2: Very poor answer, off-topic, shows no technical understanding
+- Score 3-4: Very basic answer, minimal relevance, vague, lacks explanation
+- Score 5-6: Some understanding shown, lacks technical depth or examples
+- Score 7-8: Good answer with relevant technical points, but missing depth or clarity
+- Score 9-10: Excellent answer with strong technical explanation, technologies, examples, and best practices
 
-SCORING CRITERIA:
-- 0: Empty, irrelevant, or nonsensical answers (random characters, numbers, gibberish)
-- 1-2: Very poor answers with no technical content or completely off-topic
-- 3-6: Basic answers with minimal technical detail or partially relevant
-- 7-8: Good answers with relevant technical content and some depth
-- 9-10: Excellent answers with detailed technical explanations, examples, and best practices
-
-EVALUATION RULES:
-- If answer is empty, random characters, or nonsensical → Score 0
-- If answer shows no understanding of the question → Score 0
-- If answer is off-topic or irrelevant → Score 0-1
-- If answer has basic understanding but lacks depth → Score 4-8
-- If answer shows excellent technical expertise with examples → Score 9-10
-
-TECHNICAL DEPTH REQUIREMENTS:
-- For complex technical questions,look for specific technologies, methodologies, or frameworks mentioned
-- Consider if the answer addresses the core technical challenge
+RULES:
+- If answer is EMPTY or gibberish, assign score 0
+- If answer is off-topic or unrelated to question, assign score 0-1
+- If answer barely explains anything, assign 2-4
+- Give 7+ only if the answer includes specific technologies or clear logic
+- Give 9-10 only if it includes clear explanation, examples, and best practices
 
 EXAMPLES:
 - "09890809890809" or "pouiouiuoihiuhgjhkjb" → Score 0 (nonsensical)
@@ -95,7 +93,7 @@ EXAMPLES:
 - "It's a database" → Score 0 (too vague)
 - "I used it for data storage" → Score 1-3 (basic)
 - "I used ClickHouse for analytics due to its columnar storage" → Score 4-6 (good) 
-- "I chose ClickHouse over PostgreSQL for real-time analytics because..." → Score 8-10 (excellent)
+- "I chose ClickHouse over PostgreSQL for real-time analytics because..." → Score 6-10 (excellent)
 
 Be strict and honest. Do not give high scores for poor answers.
 

@@ -10,6 +10,8 @@ const SmartInput = ({ label, value, onChange }) => {
   const [isListening, setIsListening] = useState(false);
   const [fileName, setFileName] = useState("");
 
+  const [transcriptHistory, setTranscriptHistory] = useState(value || "");
+
   // Voice Input Handler
   const handleSpeechToText = () => {
     const SpeechRecognition =
@@ -19,13 +21,18 @@ const SmartInput = ({ label, value, onChange }) => {
 
     if (!recognitionRef.current) {
       recognitionRef.current = new SpeechRecognition();
-      recognitionRef.current.lang = "en-US";
+      recognitionRef.current.lang = "en-Indian";
       recognitionRef.current.continuous = false;
       recognitionRef.current.interimResults = false;
 
       recognitionRef.current.onresult = (event) => {
         const transcript = event.results[0][0].transcript;
-        onChange(value + " " + transcript);
+
+        setTranscriptHistory((prev) => {
+          const updatedText = prev + " " + transcript;
+          onChange(updatedText); // Update parent too
+          return updatedText;
+        });
       };
 
       recognitionRef.current.onerror = () => setIsListening(false);
