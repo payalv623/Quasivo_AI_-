@@ -20,9 +20,7 @@ const Result = () => {
 
   // Loading evaluation data from both ->>> location state or  ->>> localStorage
 
-
   const loadEvaluationData = () => {
-
     // First try to get data from location state
     if (
       location.state?.questions &&
@@ -50,7 +48,6 @@ const Result = () => {
       };
     }
 
-   
     return {
       questions: [],
       answers: [],
@@ -74,7 +71,7 @@ const Result = () => {
     resume = "",
   } = evaluationData || {};
 
-  // Save evaluation data to localStorage 
+  // Save evaluation data to localStorage
   useEffect(() => {
     if (
       questions &&
@@ -177,7 +174,7 @@ const Result = () => {
               <h2 className="font-semibold text-lg text-blue-700 mb-2">
                 Q{i + 1}: {q}
               </h2>
-              <p className="mb-2 text-gray-700">
+              <p className="mb-2 text-gray-700 break-words whitespace-pre-wrap">
                 <span className="font-medium text-gray-800">Answer:</span>{" "}
                 {answers?.[i] ?? "N/A"}
               </p>
